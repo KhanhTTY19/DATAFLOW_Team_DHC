@@ -27,7 +27,7 @@ Dự án tập trung vào việc dự báo số tín chỉ thực tế sinh viê
 
 Dự án được xây dựng gồm 5 giai đoạn:
 
-1. **Tiền xử lý & Làm sạch**: Xử lý các giá trị vô lý (GPA > 4, TC_DANGKY = 0) bằng phương pháp dự báo giá trị thiếu thông minh thay vì xóa bỏ.
+1. **Tiền xử lý & Làm sạch**: Xử lý các giá trị không hợp lệ (GPA > 4, TC_DANGKY = 0) bằng phương pháp dự báo giá trị thiếu thông minh thay vì xóa bỏ.
 
 2. **Kỹ thuật đặc trưng (Feature Engineering)**: 
    * Tạo các đặc trưng về xu hướng (`GPA_trend`, `CPA_velocity`).
@@ -101,4 +101,6 @@ Top 10 đặc trưng ảnh hưởng mạnh nhất đến dự báo:
 ## 6. Liên hệ
 
 * **Đội thi**: DHC
-* **Email**: ykhanh205.1@gmail.com
+* **Email**: 
+  - ykhanh205.1@gmail.com
+  - hoangthihanh2410@gmail.com
