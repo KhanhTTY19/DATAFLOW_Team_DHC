@@ -14,6 +14,7 @@ Dự án tập trung vào việc dự báo số tín chỉ thực tế sinh viê
 ├── outputs/
 │   ├── plots/                # Các biểu đồ phân tích (SHAP, LIME, Error Analysis)
 │   ├── metrics/              # Kết quả đánh giá mô hình (JSON/CSV)
+│   ├── explainability/       # Kết quả giải thích mô hình (SHAP/LIME)
 │   └── submission.csv        # File kết quả cuối cùng nộp kaggle
 ├── admission.csv             # Dữ liệu tuyển sinh
 ├── academic_records.csv      # Lịch sử học tập
