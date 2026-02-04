@@ -1,0 +1,121 @@
+
+================================================================================
+COMPREHENSIVE MODEL EVALUATION REPORT
+================================================================================
+Generated: 2026-02-04 16:17:32
+
+================================================================================
+1. MODEL PERFORMANCE METRICS
+================================================================================
+
+TRAINING SET (90,582 samples):
+-------------
+MAE:   2.3178
+MSE:   11.0011
+RMSE:  3.3168
+R²:    0.7247
+MAPE:  23.90%
+Accuracy (±1 credit):  34.0%
+Accuracy (±2 credits): 58.1%
+Accuracy (±3 credits): 73.4%
+
+VALIDATION SET (15,144 samples):
+---------------
+MAE:   2.6493
+MSE:   14.4667
+RMSE:  3.8035
+R²:    0.6941
+MAPE:  30.46%
+Accuracy (±1 credit):  32.6%
+Accuracy (±2 credits): 53.8%
+Accuracy (±3 credits): 68.5%
+
+CROSS-VALIDATION (5-Fold):
+--------------------------
+Test RMSE: 3.6793 ± 0.0211
+Test MAE:  2.5413 ± 0.0073
+Test R²:   0.6610 ± 0.0078
+
+Stability:  STABLE
+Overfitting:  MINIMAL
+
+================================================================================
+2. FEATURE IMPORTANCE - Top 15 by Gain
+================================================================================
+
+ 6. consecutive_fails                 4791.24
+ 1. TC_DANGKY_current                 2915.55
+ 2. TC_GPA_interaction                2750.68
+ 8. fail_rate                         1070.68
+ 5. CPA_last                           701.16
+ 4. TC_HT_last                         490.03
+ 9. num_failed_semesters               401.24
+13. TC_load_ratio                      373.74
+ 7. TC_HT_ratio_mean                   363.10
+20. num_semesters                      355.30
+18. NAM_TUYENSINH                      334.64
+23. KY_SO                              277.65
+ 3. TC_change                          249.81
+15. PTXT_TE                            232.34
+11. TC_DANGKY_last                     186.11
+
+================================================================================
+3. SHAP ANALYSIS - Top 15 Most Influential Features
+================================================================================
+
+ 1. TC_DANGKY_current                  3.0876
+ 5. CPA_last                           0.8691
+ 2. TC_GPA_interaction                 0.7272
+ 7. TC_HT_ratio_mean                   0.5390
+13. TC_load_ratio                      0.5058
+18. NAM_TUYENSINH                      0.4111
+ 4. TC_HT_last                         0.2803
+ 6. consecutive_fails                  0.2689
+ 3. TC_change                          0.2683
+20. num_semesters                      0.1889
+16. DIEM_TRUNGTUYEN                    0.1781
+ 8. fail_rate                          0.1733
+15. PTXT_TE                            0.1427
+19. DIEM_CHUAN                         0.1328
+11. TC_DANGKY_last                     0.0996
+
+================================================================================
+4. FILES GENERATED
+================================================================================
+
+Metrics:
+   metrics_train.json & .csv
+   metrics_validation.json & .csv
+   cv_fold_results.csv
+   cv_summary.json
+
+Feature Importance:
+   feature_importance.csv & .png
+
+SHAP Analysis:
+   shap_values.csv
+   shap_feature_importance.csv
+   shap_summary_bar.png
+   shap_summary_beeswarm.png
+   shap_dependence_plots.png
+
+LIME Explanations:
+   lime_explanations.json & .png
+
+Prediction Analysis:
+   prediction_analysis_train.png
+   prediction_analysis_validation.png
+
+Cross-Validation:
+   cv_results.png
+
+================================================================================
+5. KEY FINDINGS
+================================================================================
+
+ Model achieves R² of 0.694 on validation set
+ 32.6% of predictions within ±1 credit
+ RMSE of 3.804 indicates good predictive accuracy
+ Cross-validation confirms model stability (std: 0.021)
+
+ All results saved in: ./outputs/
